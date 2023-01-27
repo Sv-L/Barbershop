@@ -1,0 +1,249 @@
+/* @font-face {
+  font-family: Andruha-400;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: Andruha-700;
+  src: url(../fonts/OpenSans-Bold.ttf);
+} */
+:root{
+  --accent-color:#FF6C00 ;
+  --main-title-color: #ffffff;
+  --main-btn-color: #ffffff;
+  --second-title-color:#303030;
+  --second-btn-color:#303030;
+} 
+
+body{
+    font-family:'Open Sans', sans-serif;
+    
+}
+.link{
+    text-decoration: none;
+}
+.list{
+    list-style: none;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title{
+font-family: 'Raleway',sans-serif;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+color: var(--second-title-color);
+}
+
+.pre-title{
+font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+text-transform: uppercase;
+color:var(--second-title-color);
+}
+
+/*=================HEADER==================*/
+
+.header {
+    background: rgb(153, 161, 155);
+}
+
+.header-link {
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+}
+
+.header-link:is(:hover, :focus),
+.hero-link:is(:hover, :focus) {
+  color:#FF6C00;
+}
+.header-tel {
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.btn {
+font-family: inherit;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: #FFFFFF;
+cursor: pointer;
+}
+
+
+
+/*=================HERO==================*/
+.hero {
+  background: rgb(17, 17, 17);
+} 
+
+.hero-link{
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15/11);
+  letter-spacing: 0.2em;
+  color:var(--second-btn-color);
+}
+
+.hero-pre-title{
+font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+text-transform: uppercase;
+color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+font-family: 'Raleway';
+font-size: 72px;
+line-height: 1.18;
+letter-spacing: 0.05em;
+color: var(--main-title-color);
+}
+.hero-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+
+/*=================ABOUT==================*/
+
+.about-after-title {
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #555555;
+}
+.about-text {
+  font-size: 14px;
+line-height: 1.86;
+letter-spacing: 0.02em;
+color: #555555;
+}
+.about-btn {
+color: var(--second-btn-color);
+border: 1px solid #FF6C00;
+border-radius: 25px;
+}
+
+/*=================PRICES==================*/
+.prices{
+  background-color: rgb(49, 45, 45);
+}
+
+.prices-pre-title{
+  color:  rgba(157, 164, 189, 0.6);;
+}
+.prices-title{
+  color: var(--main-title-color);
+}
+
+.prices-item-text {
+  font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+.prices-btn {
+  color: var(--main-btn-color);
+}
+
+
+/*=================BENEFITS==================*/
+.benefits {
+}
+.benefits-list {
+}
+.list {
+}
+.benefits-item>span {
+  font-weight: 700;
+font-size: 42px;
+line-height: calc(57/42);
+letter-spacing: 0.05em;
+text-align: center;
+color: var(--second-title-color);
+}
+.benefits-item-text {
+font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+text-align: center;
+color: #303030;
+}
+
+.benefits-pre-title {
+}
+.benefits-title {
+}
+.title {
+}
+.benefits-after-title {
+  font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #555555;
+}
+/*=================BARBERS==================*/
+.barbers {
+  background: #F7F7F7;
+}
+.barbers-pre-title {
+}
+.barbers-title {
+}
+.title {
+}
+.barbers-list {
+}
+.list {
+}
+.barbers-item {
+}
+.barbers-item-title {
+  font-size: 18px;
+line-height: calc(25/18);
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--second-btn-color);
+
+}
+.barbers-item-text {
+  font-size: 14px;
+line-height: calc(19/14);
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--accent-color);
+}
+
+
+
+/*=================BENEFITS==================*/
+/*=================BENEFITS==================*/
