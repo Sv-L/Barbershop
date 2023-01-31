@@ -13,10 +13,25 @@
   --second-title-color:#303030;
   --second-btn-color:#303030;
 } 
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding-left: 0;
+}
 
+button{
+  cursor: pointer;
+}
+address{
+  font-style: normal;
+}
+img{
+  display: block;
+}
 body{
     font-family:'Open Sans', sans-serif;
-    
 }
 .link{
     text-decoration: none;
@@ -24,7 +39,14 @@ body{
 .list{
     list-style: none;
 }
-
+.container{
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline:2px solid #6e0e0e;
+}
 .hidden {
   position: absolute;
   width: 1px;
@@ -44,6 +66,7 @@ font-size: 42px;
 line-height: 1.17;
 letter-spacing: 0.05em;
 color: var(--second-title-color);
+margin-bottom: 20px;
 }
 
 .pre-title{
@@ -52,12 +75,19 @@ font-size: 11px;
 line-height: calc(15/11);
 text-transform: uppercase;
 color:var(--second-title-color);
+margin-bottom: 20px;
 }
 
 /*=================HEADER==================*/
 
 .header {
-    background: rgb(153, 161, 155);
+    background: rgb(13, 14, 13);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.header-list{
+  display: flex;
+
 }
 
 .header-link {
@@ -82,6 +112,8 @@ color: #FFFFFF;
 }
 
 .btn {
+  display: inline-block;
+  padding: 12px 20px;
 font-family: inherit;
 font-weight: 600;
 font-size: 12px;
@@ -90,13 +122,16 @@ letter-spacing: 0.09em;
 text-transform: uppercase;
 color: #FFFFFF;
 cursor: pointer;
+border: 1px solid #FF6C00;
+border-radius: 25px;
+background: transparent;
 }
-
 
 
 /*=================HERO==================*/
 .hero {
   background: rgb(17, 17, 17);
+  margin-top: 20px;
 } 
 
 .hero-link{
@@ -113,17 +148,16 @@ font-size: 11px;
 line-height: calc(15/11);
 text-transform: uppercase;
 color: rgba(157, 164, 189, 0.6);
+margin-bottom: 20px;
 }
 
-.hero-pre-title {
-  color: rgba(157, 164, 189, 0.6);
-}
 .hero-title {
 font-family: 'Raleway';
 font-size: 72px;
 line-height: 1.18;
 letter-spacing: 0.05em;
 color: var(--main-title-color);
+margin-bottom: 20px;
 }
 .hero-after-title {
   font-size: 18px;
@@ -133,18 +167,23 @@ color: var(--main-title-color);
 }
 
 /*=================ABOUT==================*/
-
+.about{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .about-after-title {
 font-size: 18px;
 line-height: 1.67;
 letter-spacing: 0.02em;
 color: #555555;
+margin-bottom: 20px;
 }
 .about-text {
   font-size: 14px;
 line-height: 1.86;
 letter-spacing: 0.02em;
 color: #555555;
+margin-bottom: 42px;
 }
 .about-btn {
 color: var(--second-btn-color);
@@ -155,6 +194,9 @@ border-radius: 25px;
 /*=================PRICES==================*/
 .prices{
   background-color: rgb(49, 45, 45);
+  padding-top: 120px;
+  padding-bottom: 120px;
+
 }
 
 .prices-pre-title{
@@ -162,6 +204,7 @@ border-radius: 25px;
 }
 .prices-title{
   color: var(--main-title-color);
+  margin-bottom: 42px;
 }
 
 .prices-item-text {
@@ -174,13 +217,24 @@ color: #9DA4BD;
   color: var(--main-btn-color);
 }
 
-
+.prices-list {
+  border: 1px solid #fff;
+  padding: 30px 20px;
+}
 /*=================BENEFITS==================*/
 .benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .benefits-list {
 }
 .list {
+}
+.benefits-item{
+  border: 1px solid #000;
+  padding: 20px 24px;
+  width: 170px;
+  height: 133px;
 }
 .benefits-item>span {
   font-weight: 700;
@@ -188,6 +242,7 @@ font-size: 42px;
 line-height: calc(57/42);
 letter-spacing: 0.05em;
 text-align: center;
+display: block;
 color: var(--second-title-color);
 }
 .benefits-item-text {
@@ -214,6 +269,8 @@ color: #555555;
 /*=================BARBERS==================*/
 .barbers {
   background: #F7F7F7;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .barbers-pre-title {
 }
@@ -243,7 +300,13 @@ letter-spacing: 0.02em;
 color: var(--accent-color);
 }
 
+/*=================GALLERY==================*/
+.gallery{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 
-/*=================BENEFITS==================*/
+
+
 /*=================BENEFITS==================*/
