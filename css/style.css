@@ -144,18 +144,23 @@ background: transparent;
 
 /*=================HERO==================*/
 .hero {
-  background: rgb(17, 17, 17);
   margin-top: 20px;
+  
 } 
 .hero-container{
   display: flex;
+  
 }
 .hero-list{
   width: 100px;
 }
 .hero-wrap{
   flex-grow: 1;
-  padding: 272px 100px 208 px;
+  padding: 272px 100px 208px;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/slider/slider-img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 .hero-link{
   font-weight: 600;
@@ -357,8 +362,35 @@ line-height: calc(19/14);
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--accent-color);
+margin-bottom: 30px;
+}
+.barbers-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
+.barbers-social-item {
+  width: 40px;
+  height: 40px;
+}
+.barbers-social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--second-btn-color);
+}
+
+.barbers-social-link:is(:hover, :focus){
+  color: var(--accent-color);
+}
+
+.barbers-social-icon{
+  fill: currentColor;
+}
 /*=================GALLERY==================*/
 .gallery{
   padding-top: 120px;
