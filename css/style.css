@@ -47,7 +47,7 @@ body{
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline:2px solid #6e0e0e;
+  outline: 2px solid red;
 }
 .hidden {
   position: absolute;
@@ -94,7 +94,8 @@ gap: 20px;
 /*=================HEADER==================*/
 
 .header {
-    background: rgb(13, 14, 13);
+    position: absolute;
+    width: 100%;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -120,6 +121,7 @@ font-size: 12px;
 line-height: 1.33;
 letter-spacing: 0.1em;
 color: #FFFFFF;
+transition: color 300ms;
 }
 
 .header-link:is(:hover, :focus),
@@ -162,10 +164,30 @@ background: transparent;
 } 
 .hero-container{
   display: flex;
-  
+  align-items: flex-end;
 }
-.hero-list{
+
+.soc-hero{
+  padding-left: 27px;
+  padding-bottom: 40px;
   width: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-list{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+}
+
+.hero-list::before{
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
 }
 .hero-wrap{
   flex-grow: 1;
@@ -181,6 +203,7 @@ background: transparent;
   line-height: calc(15/11);
   letter-spacing: 0.2em;
   color:var(--second-btn-color);
+  transition: color 300ms;
 }
 
 .hero-pre-title{
@@ -462,6 +485,7 @@ margin-bottom: 30px;
   align-items: center;
   border-radius: 50%;
   color: var(--second-btn-color);
+  transition: color 300ms;
 }
 
 .barbers-social-link:is(:hover, :focus){
