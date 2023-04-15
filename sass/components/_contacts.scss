@@ -1,0 +1,128 @@
+.online-contacts-container {
+  background-color: $second-background-color;
+  background-image: url(../images/bg-contacts.png);
+  background-repeat: no-repeat;
+  background-size: calc(50% - 15px) 100%;
+  background-position: right;
+}
+.contacts-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.online {
+  width: calc(50% + 15px);
+}
+.online-title,
+.contacts-title {
+  margin-bottom: 40px;
+  color: $main-color;
+}
+.online-form {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: rgba(157, 164, 189, 0.4);
+}
+.online-form-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+.form-field {
+  position: relative;
+}
+.online-label {
+  position: absolute;
+  left: 0;
+}
+.online-input:focus + .online-label,
+.online-input:not(:placeholder-shown) + .online-label {
+  transform: translateY(-100%);
+}
+.online-input:is(:hover, :focus) + .online-label {
+  color: $main-color;
+}
+.online-input {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: rgba(157, 164, 189, 0.4);
+
+  background-color: transparent;
+  width: 270px;
+  height: 24px;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-bottom-color: $main-color;
+    color: $main-color;
+  }
+}
+.online-label-textarea {
+  /* transform: translateY(-100%); */
+}
+.online-textarea {
+  width: calc(100% - 30px);
+  min-height: 76px;
+  resize: vertical;
+  background-color: transparent;
+  margin-bottom: 44px;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-bottom-color: $main-color;
+  }
+}
+.contacts {
+  width: calc(50% - 15px);
+  padding-left: 100px;
+  /* margin-bottom: 40px; */
+}
+
+.contacts-list {
+  margin-bottom: 70px;
+}
+
+.contacts-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $second-text-color;
+}
+
+.contacts-item:first-child {
+  font-weight: 700;
+}
+
+.contacts-item + .contacts-item {
+  margin-top: 20px;
+}
+
+.contacts-working-hour {
+  color: $main-color;
+}
+.contacts-working-hour.pre-title::before {
+  color: $before-color;
+}
+.contacts-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $second-text-color;
+}

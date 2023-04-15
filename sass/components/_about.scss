@@ -1,0 +1,36 @@
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+.about-wrap {
+  max-width: 476px;
+}
+
+.about-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  margin-bottom: 42px;
+}
+.about-btn {
+  color: $second-color;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+}
