@@ -10,6 +10,9 @@
 }
 .header-logo {
   margin-right: 130px;
+  &:hover {
+    fill: $accent-color;
+  }
 }
 .header-list {
   display: flex;
@@ -41,6 +44,9 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $main-color;
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 .header-btn {

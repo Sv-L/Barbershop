@@ -46,6 +46,10 @@
   transition: color 300ms;
 }
 
+.hero-link:is(:hover, :focus) {
+  color: $accent-color;
+}
+
 .hero-pre-title {
   margin-bottom: 20px;
   font-weight: 600;

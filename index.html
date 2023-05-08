@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body>
     <header class="header">
@@ -46,7 +46,7 @@
         <a class="header-tel link" href="tel:+380441111111"
           >+38 044 111 11 11</a
         >
-        <button class="header-btn btn" type="button">Online-booking</button>
+        <button class="header-btn btn" type="button" data-modal-open>Online-booking </button>
       </div>
     </header>
     <main>
@@ -78,7 +78,7 @@
             <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
             <p class="hero-after-title">
-              We are experts in trendy men’s haircuts. We work quickly,
+              We are experts in trendy men's haircuts. We work quickly,
               carefully and with style.
             </p>
           </div>
@@ -121,7 +121,7 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button class="about-btn btn" type="button">ONLINE-BOOKING</button>
+            <button class="about-btn btn" type="button" data-modal-open>ONLINE-BOOKING</button>
           </div>
         </div>
       </section>
@@ -134,7 +134,7 @@
           <div class="prices-wrap">
             <ul class="prices-list list">
               <li class="prices-item">
-                <p class="prices-item-text">Men’s haircut</p>
+                <p class="prices-item-text">Men's haircut</p>
                 <p class="prices-item-text">from 300 uah.</p>
               </li>
               <li class="prices-item">
@@ -152,7 +152,7 @@
             </ul>
             <ul class="prices-list list">
               <li class="prices-item">
-                <p class="prices-item-text">Trainee’s haircut</p>
+                <p class="prices-item-text">Trainee's haircut</p>
                 <p class="prices-item-text">from 50 uah.</p>
               </li>
               <li class="prices-item">
@@ -160,7 +160,7 @@
                 <p class="prices-item-text">from 200 uah.</p>
               </li>
               <li class="prices-item">
-                <p class="prices-item-text">Children’s haircut (0-12 y.o.)</p>
+                <p class="prices-item-text">Children's haircut (0-12 y.o.)</p>
                 <p class="prices-item-text">from 300 uah.</p>
               </li>
               <li class="prices-item">
@@ -169,7 +169,7 @@
               </li>
             </ul>
           </div>
-          <button class="prices-btn btn" type="button">ONLINE-BOOKING</button>
+          <button class="prices-btn btn" type="button" data-modal-open>ONLINE-BOOKING</button>
         </div>
       </section>
       <section class="benefits">
@@ -185,7 +185,7 @@
             </li>
             <li class="benefits-item">
               <span>20</span>
-              <p class="benefits-item-text">Kyiv’s best <br />barbers<br /></p>
+              <p class="benefits-item-text">Kyiv's best <br />barbers<br /></p>
             </li>
             <li class="benefits-item">
               <span>100</span>
@@ -471,7 +471,7 @@
           <ul class="footer-list list">
             <li class="footer-item">
               <a
-                class="link"
+                class="link footer-link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -480,7 +480,7 @@
             </li>
             <li class="footer-item">
               <a
-                class="link"
+                class="link footer-link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -490,6 +490,100 @@
           </ul>
         </div>
       </footer>
+      <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close type="button">
+          <svg class="modal-close-icon" width="15" height="15">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Online-booking</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label>
+              <span class="input-text">Enter your name*</span>
+              <span class="input-wrap">
+                <input
+                  class="modal-input"
+                  name="user-name"
+                  type="text"
+                  placeholder="name"
+                  required
+                />
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label class="input-text" for="user-email">Enter your mail</label>
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+                placeholder="email"
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+             <label class="input-text" for="user-tel">Enter your phone number*</label>
+            <input
+              class="modal-input"
+              name="user-tel"
+              type="tel"
+              title="+3xx (xx) xxx-xx-xx"
+              minlength="10"
+              placeholder="+3__ (__) ___-__-__"
+              required
+              value="+380"
+            />
+          </div>
+          <div class="modal-field">
+            <label class="input-text" for="user-text">Enter a message</label>
+            <textarea
+              class="modal-message"
+              id="user-text"
+              name="user-text"
+              placeholder="message"
+            ></textarea>
+          </div>
+
+          <div class="modal-field">
+            <input
+              class="input-check hidden"
+              id="policy"
+              type="checkbox"
+              value="true"
+            />
+            <label class="check-text" for="policy">
+              <span class="svg">
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span><span class="agree">Agree</span>
+               <a
+                  class="link-privacy-policy"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Privacy Policy</a
+                ></label
+            >
+          </div>
+          <button class = "btn submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
     </main>
+    
+
+<script src="./js/allmodal.js"></script>
+   
   </body>
 </html>

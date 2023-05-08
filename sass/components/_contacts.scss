@@ -41,7 +41,7 @@
 }
 .online-input:focus + .online-label,
 .online-input:not(:placeholder-shown) + .online-label {
-  transform: translateY(-100%);
+  transform: translateY(-20px);
 }
 .online-input:is(:hover, :focus) + .online-label {
   color: $main-color;
@@ -67,13 +67,13 @@
     color: $main-color;
   }
 }
-.online-label-textarea {
-  /* transform: translateY(-100%); */
-}
+// .online-label-textarea {
+/* transform: translateY(-100%); */
+// }
 .online-textarea {
   width: calc(100% - 30px);
-  min-height: 76px;
-  resize: vertical;
+  min-height: 85px;
+  resize: none;
   background-color: transparent;
   margin-bottom: 44px;
   border: none;

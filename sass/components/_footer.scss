@@ -23,3 +23,7 @@
   letter-spacing: 0.2em;
   color: $second-color;
 }
+
+.footer-link:is(:hover, :focus) {
+  color: $accent-color;
+}
