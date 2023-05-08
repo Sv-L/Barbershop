@@ -19,6 +19,13 @@ body {
   margin-bottom: 20px;
 }
 
+.online-title,
+.contacts-title,
+.prices-title {
+  margin-bottom: 40px;
+  color: $main-color;
+}
+
 .pre-title {
   font-weight: 600;
   font-size: 11px;

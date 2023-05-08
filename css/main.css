@@ -83,6 +83,13 @@ body {
   margin-bottom: 20px;
 }
 
+.online-title,
+.contacts-title,
+.prices-title {
+  margin-bottom: 40px;
+  color: #fff;
+}
+
 .pre-title {
   font-weight: 600;
   font-size: 11px;
@@ -315,11 +322,6 @@ body {
 
 .prices-pre-title {
   color: rgba(157, 164, 189, 0.6);
-}
-
-.prices-title {
-  color: var(--main-title-color);
-  margin-bottom: 42px;
 }
 
 .prices-item-text {
@@ -563,12 +565,6 @@ body {
 
 .online {
   width: calc(50% + 15px);
-}
-
-.online-title,
-.contacts-title {
-  margin-bottom: 40px;
-  color: #fff;
 }
 
 .online-form {
@@ -879,4 +875,6 @@ body {
 
 .submit-btn {
   color: #303030;
+  display: block;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
