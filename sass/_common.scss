@@ -60,9 +60,9 @@ body {
   border: 1px solid $accent-color;
   border-radius: 25px;
   background: transparent;
-}
 
-.btn:is(:hover, :focus) {
-  background-color: $accent-color;
-  color: $main-color;
+  &:is(:hover, :focus) {
+    background-color: $accent-color;
+    color: $main-color;
+  }
 }

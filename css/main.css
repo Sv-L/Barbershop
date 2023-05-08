@@ -125,7 +125,6 @@ body {
   border-radius: 25px;
   background: transparent;
 }
-
 .btn:is(:hover, :focus) {
   background-color: #ff6c00;
   color: #fff;
@@ -332,7 +331,7 @@ body {
 }
 
 .prices-btn {
-  color: var(--main-btn-color);
+  color: #fff;
   display: block;
   margin: 0 auto;
 }
