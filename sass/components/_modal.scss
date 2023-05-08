@@ -36,6 +36,11 @@
   margin-left: auto;
   padding: 0;
   margin-bottom: 10px;
+  &:is(:hover, :focus) {
+    background-color: $accent-color;
+    border: none;
+    fill: $main-color;
+  }
 }
 
 .is-hidden {
@@ -143,9 +148,9 @@
 }
 
 .input-check:checked + .check-text .svg {
-  background-color: #2e2f42;
+  background-color: $accent-color;
   border: none;
-  fill: $accent-color;
+  fill: $main-color;
 }
 
 .link-privacy-policy {

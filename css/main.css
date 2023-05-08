@@ -751,6 +751,11 @@ body {
   padding: 0;
   margin-bottom: 10px;
 }
+.modal-close:is(:hover, :focus) {
+  background-color: #ff6c00;
+  border: none;
+  fill: #fff;
+}
 
 .is-hidden {
   opacity: 0;
@@ -860,9 +865,9 @@ body {
 }
 
 .input-check:checked + .check-text .svg {
-  background-color: #2e2f42;
+  background-color: #ff6c00;
   border: none;
-  fill: #ff6c00;
+  fill: #fff;
 }
 
 .link-privacy-policy {
