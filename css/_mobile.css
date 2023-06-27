@@ -1,0 +1,280 @@
+@media screen and (max-width: 320px) {
+  .hero-title {
+    font-size: 40px;
+  }
+
+  img {
+    max-width: 260px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+
+  .section {
+    padding: 84px 0;
+  }
+  .after-title {
+    font-size: 16px;
+  }
+
+  /*-------------------------MOBILE MENU------------------------------*/
+  .menu-hamburger {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  .icon-menu-hamburger {
+    stroke: var(--main-color);
+  }
+
+  .mob-menu {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    right: 0;
+    height: 100%;
+    background-color: var(--background-color);
+    padding: 48px 0 48px 40px;
+  }
+
+  .mob-menu > .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+  }
+  .menu-close {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+  }
+  .icon-menu-close {
+    fill: var(--second-color);
+  }
+
+  .menu-close:is(:hover, :focus) .icon-menu-close {
+    fill: var(--accent-color);
+  }
+  .mob-menu-list {
+    margin-bottom: 64px;
+  }
+
+  .mob-menu-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .mob-menu-item:is(:hover, :focus) .mob-menu-link {
+    color: var(--accent-color);
+  }
+  .mob-menu-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    letter-spacing: 0.1em;
+    color: var(--second-color);
+  }
+
+  .mob-menu-tel {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    letter-spacing: 0.1em;
+    color: var(--second-color);
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  .mob-menu-tel:is(:hover, :focus) {
+    color: var(--accent-color);
+  }
+
+  .mob-menu-btn {
+    margin-bottom: 64px;
+  }
+
+  .mob-soc-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .mob-soc-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    letter-spacing: 0.2em;
+    color: var(--second-color);
+  }
+
+  .soc-wrap {
+    display: flex;
+    gap: 40px;
+    align-items: baseline;
+  }
+  .link-before::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: var(--second-color);
+    display: block;
+  }
+  .mob-soc-item:is(:hover, :focus) .mob-soc-link {
+    color: var(--accent-color);
+  }
+
+  /*-------------------------HEADER------------------------------*/
+
+  .header-container {
+    justify-content: space-between;
+    padding: 40px 30px;
+  }
+  .header-list,
+  .header-tel,
+  .header-btn,
+  .soc-hero {
+    display: none;
+  }
+  .header-logo {
+    fill: var(--main-color);
+  }
+
+  /*-------------------------HERO------------------------------*/
+
+  .hero {
+    background-image: linear-gradient(
+        var(--hero-bg-color),
+        var(--hero-bg-color)
+      ),
+      url('../images/slider/bg-hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    padding: 208px 0;
+  }
+
+  .hero-after-title {
+    font-size: 16px;
+    line-height: 1.65;
+    max-width: 320px;
+  }
+
+  /*-------------------------ABOUT------------------------------*/
+
+  .about-list {
+    display: none;
+  }
+
+  .about-title {
+    max-width: 306px;
+    font-size: 28px;
+  }
+  .about-after-title {
+    max-width: 400px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    margin-bottom: 40px;
+    max-width: 418px;
+    line-height: 1.85;
+  }
+
+  /*-------------------------PRICES------------------------------*/
+  .prices {
+    background-color: var(--background-color-prices);
+    background-image: url(../images/prices/bg-prices-mob.png);
+  }
+
+  .prices-title {
+    font-size: 40px;
+  }
+  .prices-wrap {
+    padding: 30px 20px 30px 40px;
+    background-image: linear-gradient(
+      180deg,
+      var(--bg-prices1) 0%,
+      var(--bg-prices2) 100%
+    );
+  }
+  .prices-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .prices-item-text {
+    font-size: 14px;
+    line-height: 1.42;
+  }
+
+  .prices-list:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  /*-------------------------BENEFITS------------------------------*/
+  .benefits-item {
+    width: 194px;
+  }
+
+  /*-------------------------BARBERS------------------------------*/
+  .barbers-social-item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+  .benefits-after-title {
+    margin-bottom: 44px;
+  }
+
+  /*-------------------------GALLERY------------------------------*/
+  .gallery-pre-title {
+    margin-bottom: 70px;
+  }
+
+  .gallery-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  /*-------------------------CONTACTS------------------------------*/
+  .section-contacts {
+    background-color: var(--second-background-color);
+    background-image: url(../images/bg-contacts-mob.png);
+  }
+  .online-title {
+    text-align: center;
+  }
+  .contacts-list {
+    margin-bottom: 44px;
+  }
+  .btn-submit {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contacts-title {
+    text-align: center;
+  }
+
+  /*-------------------------FOOTER------------------------------*/
+  .footer {
+    padding: 44px 15px;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+
+  .footer-copyright {
+    order: 1;
+    flex-basis: 100%;
+  }
+
+  .footer-list {
+    margin-left: auto;
+  }
+
+  /*-------------------------MODAL------------------------------*/
+  .modal {
+    width: 100%;
+    max-width: 480px;
+  }
+}

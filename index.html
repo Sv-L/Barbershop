@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
     <header class="header">
@@ -26,8 +26,7 @@
         <nav class="header-navigation">
           <a class="header-logo" href="./index.html">
             <svg class="logo-icon" width="69" height="55">
-              <use href="./images/icons.svg#icon-logo"></use></svg
-          ></a>
+              <use href="./images/icons.svg#icon-logo"></use></svg></a>
           <ul class="header-list list">
             <li class="header-item">
               <a class="header-link link" href="#about">About</a>
@@ -43,10 +42,73 @@
             </li>
           </ul>
         </nav>
-        <a class="header-tel link" href="tel:+380441111111"
-          >+38 044 111 11 11</a
-        >
-        <button class="header-btn btn" type="button" data-modal-open>Online-booking </button>
+        <div class="booking-tel-wrap">
+          <a class="header-tel link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="header-btn btn btn-second" type="button" data-modal-open>Online-booking </button>
+        </div>
+      <button class="menu-hamburger js-open-menu" data-menu-open><svg class="icon-menu-hamburger" width="30" height="19">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg></button>
+      </div>
+           
+      <div class="hidden mob-menu" data-menu>
+        <div class="container">
+          <div>
+            <button class="menu-close" data-menu-close type="button"><svg class="icon-menu-close" width="30" height="19">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg></button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="#about">About</a>
+              </li>
+
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="#price"
+                  >Services and prices</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="#barbers">Barbers</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a class="mob-menu-tel link" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <button class="mob-menu-btn btn" data-modal-open type="button">
+              Online-booking
+            </button>
+           <div class="soc-wrap">
+            <span class="link-before"></span>
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-item">
+                  <a
+                    class="mob-soc-link link"
+                    href
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mob-soc-item">
+                  <a
+                    class="mob-soc-link link"
+                    href
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Youtube</a
+                  >
+                </li>
+              </ul>
+           </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -76,41 +138,73 @@
           </div>
           <div class="hero-wrap">
             <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="hero-after-title">
+            <h1 class="hero-title title">BarberShop</h1>
+            <p class="hero-after-title after-title">
               We are experts in trendy men's haircuts. We work quickly,
               carefully and with style.
             </p>
           </div>
         </div>
-        <!-- тут має бути Slider-->
-      </section>
-      <section class="about">
+        
+       </section>
+       <section class="about section">
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
-              <img
-                class="about-pic"
-                src="./images/about/img1.jpg"
-                alt="haircuts"
-                width="270"
-                height="445"
-              />
-            </li>
+              <picture>
+                              <source
+                      type="image/jpg"
+                      srcset="
+                        ./images/about/img1.jpg"
+                      width="370"
+                      height="346"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/about/img1-tab.jpg"
+                      width="330"
+                      height="235"
+                      media="(min-width: 768px)"
+                    />
+                                <img
+                      src="./images/about/img1-tab.jpg"
+                      alt="john-smith"
+                      width="330"
+                      height="235"
+                    />
+                  </picture>
+                  </li>
             <li class="about-item">
-              <img
-                class="about-pic"
-                src="./images/about/img2.jpg"
-                alt="haircuts"
-                width="270"
-                height="445"
-              />
-            </li>
+              <picture>
+                              <source
+                      type="image/jpg"
+                      srcset="
+                        ./images/about/img2.jpg"
+                      width="370"
+                      height="346"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/about/img2-tab.jpg"
+                      width="330"
+                      height="235"
+                      media="(min-width: 768px)"
+                    />
+                                <img
+                      src="./images/about/img2-tab.jpg"
+                      alt="john-smith"
+                      width="330"
+                      height="235"
+                    />
+                  </picture>
+                          </li>
           </ul>
           <div class="about-wrap">
             <p id="about" class="about-pre-title pre-title">About</p>
-            <h2 class="about-title title">Best Barbershop in your city</h2>
-            <p class="about-after-title">
+            <h2 class="about-title title section-title">Best Barbershop in your city</h2>
+            <p class="about-after-title after-title">
               If you want to add more confidence to your image, you should
               definitely visit us.
             </p>
@@ -125,12 +219,12 @@
           </div>
         </div>
       </section>
-      <section class="prices">
+      <section class="prices section">
         <div class="container">
           <p class="prices-pre-title pre-title">
             Spend your time with the best masters
           </p>
-          <h2 id="price" class="prices-title title">Services and prices</h2>
+          <h2 id="price" class="title prices-title ">Services and prices</h2>
           <div class="prices-wrap">
             <ul class="prices-list list">
               <li class="prices-item">
@@ -169,11 +263,20 @@
               </li>
             </ul>
           </div>
-          <button class="btn prices-btn" type="button" data-modal-open>ONLINE-BOOKING</button>
+          <button class="btn btn-second" type="button" data-modal-open>ONLINE-BOOKING</button>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits section">
         <div class="container benefits-container">
+          
+          <div class="benefits-wrap">
+            <p class="benefits-pre-title pre-title">Old traditional school</p>
+            <h2 class="benefits-title title">¿Why people come to us?</h2>
+            <p class="benefits-after-title">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
           <ul class="benefits-list list">
             <li class="benefits-item">
               <span>600</span>
@@ -192,30 +295,47 @@
               <p class="benefits-item-text">Gifts for regular customers</p>
             </li>
           </ul>
-          <div class="benefits-wrap">
-            <p class="benefits-pre-title pre-title">Old traditional school</p>
-            <h2 class="benefits-title title">¿Why people come to us?</h2>
-            <p class="benefits-after-title">
-              Only good things are said about us. But it's better to see and
-              feel 1 time than read 10 times.
-            </p>
-          </div>
         </div>
       </section>
-      <section class="barbers">
-        <div class="container">
+      <section class="barbers section">
+        <div class="container barbers-container">
           <p class="barbers-pre-title pre-title">
             For true enjoyers of the atmosphere
           </p>
           <h2 id="barbers" class="barbers-title title">Our barbers</h2>
           <ul class="barbers-list list">
             <li class="barbers-item">
-              <img
-                src="./images/employees/john-smith.jpg"
-                alt="barber John Smith"
-                width="370"
-                height="346"
-              />
+              <picture>
+                              <source
+                      type="image/jpg"
+                      srcset="
+                        ./images/employees/john-smith.jpg"
+                      width="370"
+                      height="346"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/employees/john-smith-tab.jpg"
+                      width="450"
+                      height="346"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/employees/john-smith-mob.jpg"
+                      width="418"
+                      height="346"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/employees/john-smith-mob.jpg"
+                      alt="john-smith"
+                      width="418"
+                      height="346"
+                    />
+                  </picture>
               <div class="barbers-item-wrap">
                 <h3 class="barbers-item-title">John Smith</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
@@ -238,25 +358,48 @@
                 <li class="barbers-social-item">
                   <a href="" class="barbers-social-link link"
                     ><svg class="barbers-social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use></svg
-                  ></a>
+                      <use href="./images/icons.svg#icon-facebook"></use></svg></a>
                 </li>
                 <li class="barbers-social-item">
                   <a href="" class="barbers-social-link link"
                     ><svg class="barbers-social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use></svg
-                  ></a>
+                      <use href="./images/icons.svg#icon-linkedin"></use></svg></a>
                 </li>
               </ul>
             </li>
             <li class="barbers-item">
-              <img
-                src="./images/employees/michele-doe.jpg"
-                alt="barber Michele Doe"
-                width="370"
-                height="346"
-              />
-              <div class="barbers-item-wrap">
+              <picture>
+                              <source
+                      type="image/jpg"
+                      srcset="
+                        ./images/employees/michele-doe.jpg"
+                      width="370"
+                      height="346"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/employees/michele-doe-tab.jpg"
+                      width="450"
+                      height="346"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/employees/michele-doe-mob.jpg"
+                      width="418"
+                      height="346"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/employees/john-smith-mob.jpg"
+                      alt="michele-doe"
+                      width="418"
+                      height="346"
+                    />
+                  </picture>
+               <div class="barbers-item-wrap">
                 <h3 class="barbers-item-title">Michele Doe</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
               </div>
@@ -278,24 +421,48 @@
                 <li class="barbers-social-item">
                   <a href="" class="barbers-social-link link"
                     ><svg class="barbers-social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use></svg
-                  ></a>
+                      <use href="./images/icons.svg#icon-facebook"></use></svg></a>
                 </li>
                 <li class="barbers-social-item">
                   <a href="" class="barbers-social-link link"
                     ><svg class="barbers-social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use></svg
-                  ></a>
+                      <use href="./images/icons.svg#icon-linkedin"></use></svg></a>
                 </li>
               </ul>
             </li>
             <li class="barbers-item">
-              <img
-                src="./images/employees/alan-black.jpg"
-                alt="barber"
-                width="370"
-                height="346"
-              />
+              <picture>
+                              <source
+                      type="image/jpg"
+                      srcset="
+                        ./images/employees/alan-black.jpg"
+                      width="370"
+                      height="346"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/employees/alan-black-tab.jpg"
+                      width="450"
+                      height="346"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/employees/alan-black-mob.jpg"
+                      width="418"
+                      height="346"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/employees/alan-black-mob.jpg"
+                      alt="alan-black"
+                      width="418"
+                      height="346"
+                    />
+                  </picture>
+              
               <div class="barbers-item-wrap">
                 <h3 class="barbers-item-title">Alan Black</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
@@ -318,152 +485,253 @@
                 <li class="barbers-social-item">
                   <a href="" class="barbers-social-link link"
                     ><svg class="barbers-social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use></svg
-                  ></a>
+                      <use href="./images/icons.svg#icon-facebook"></use></svg></a>
                 </li>
                 <li class="barbers-social-item">
                   <a href="" class="barbers-social-link link"
                     ><svg class="barbers-social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use></svg
-                  ></a>
+                      <use href="./images/icons.svg#icon-linkedin"></use></svg></a>
                 </li>
               </ul>
             </li>
           </ul>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery section">
         <div class="container">
           <p class="gallery-pre-title pre-title">
             In Latin, "barba" means "beard"
           </p>
-          <h2 class="gallery-title title visually-hidden">Gallery</h2>
+          <h2 class="gallery-title title hidden">Gallery</h2>
           <ul class="gallery-list list">
             <li class="gallery-item">
-              <img
-                src="./images/gallery/rectangle25.jpg"
-                alt="gallery picture barber"
-                width="270"
-                height="360"
-              />
+              <picture>
+                              <source
+                      type="image/jpg"
+                      srcset="
+                        ./images/gallery/rectangle25.jpg"
+                      width="270"
+                      height="360"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/gallery/rectangle25-tab.jpg"
+                      width="330"
+                      height="360"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/gallery/rectangle25-mob.jpg"
+                      width="418"
+                      height="360"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/gallery/rectangle25-mob.jpg"
+                      alt="alan-black"
+                      width="418"
+                      height="360"
+                    />
+                  </picture>
+                          </li>
+            <li class="gallery-item">
+              <picture>
+                              <source
+                      type="image/jpg"
+                      srcset="
+                        ./images/gallery/rectangle26.jpg"
+                      width="270"
+                      height="360"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/gallery/rectangle26-tab.jpg"
+                      width="330"
+                      height="360"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/gallery/rectangle26-mob.jpg"
+                      width="418"
+                      height="360"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/gallery/rectangle26-mob.jpg"
+                      alt="alan-black"
+                      width="418"
+                      height="360"
+                    />
+                  </picture>
             </li>
             <li class="gallery-item">
-              <img
-                src="./images/gallery/rectangle26.jpg"
-                alt="gallery picture barber"
-                width="270"
-                height="360"
-              />
+             <picture>
+                              <source
+                      type="image/jpg"
+                      srcset="
+                        ./images/gallery/rectangle27.jpg"
+                      width="270"
+                      height="360"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/gallery/rectangle27-tab.jpg"
+                      width="330"
+                      height="360"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/gallery/rectangle27-mob.jpg"
+                      width="418"
+                      height="360"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/gallery/rectangle27-mob.jpg"
+                      alt="alan-black"
+                      width="418"
+                      height="360"
+                    />
+                  </picture>
             </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery/rectangle27.jpg"
-                alt="gallery picture barber"
-                width="270"
-                height="360"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery/rectangle28.jpg"
-                alt="gallery picture barber"
-                width="270"
-                height="360"
-              />
+            <picture>
+                              <source
+                      type="image/jpg"
+                      srcset="
+                        ./images/gallery/rectangle28.jpg"
+                      width="270"
+                      height="360"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/gallery/rectangle28-tab.jpg"
+                      width="330"
+                      height="360"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      type="image/jpg"
+                      srcset="./images/gallery/rectangle28-mob.jpg"
+                      width="418"
+                      height="360"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/gallery/rectangle28-mob.jpg"
+                      alt="alan-black"
+                      width="418"
+                      height="360"
+                    />
+                  </picture>
             </li>
           </ul>
         </div>
       </section>
-
-      <section class="online-contacts-container">
-        <div class="container contacts-wrap">
-          <div class="online">
-            <h2 class="online-title title">Online-booking</h2>
-            <form class="online-form">
-              <div class="online-form-wrap">
-                <div class="form-field">
-                  <input
-                      class="online-input"
-                      type="text"
-                      name="user_name"
-                      required
-                      pattern="^[a-zA-Z]+"
-                      minlength="2"
-                      placeholder=" "
-                  />
-                  <label class="online-label">
-                    NAME*
-                    </label>
+      <div class="section-wrap">
+        <section class="section-online section">
+          <div class="container contacts-wrap">
+              <h2 class="online-title title">Online-booking</h2>
+              <form class="online-form">
+                <div class="online-form-wrap">
+                  <div class="form-field">
+                    <input
+                        class="online-input"
+                        type="text"
+                        name="user_name"
+                        required
+                        pattern="^[a-zA-Z]+"
+                        minlength="2"
+                        placeholder=" "
+                    />
+                    <label class="online-label">
+                      NAME*
+                      </label>
+                  </div>
+                  <div class="form-field">
+                    <input
+                        class="online-input"
+                        type="tel"
+                        name="user_phone"
+                        minlength="10"
+                        maxlength="10"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+                        placeholder=" "
+                    />
+                    <label class="online-label"
+                      >PHONE*
+                      </label>
+                  </div>
                 </div>
                 <div class="form-field">
-                  <input
-                      class="online-input"
-                      type="tel"
-                      name="user_phone"
-                      minlength="10"
-                      maxlength="10"
-                      pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+                  <textarea
+                      class="online-textarea online-input"
+                      name="user_comment"
                       placeholder=" "
-                  />
-                  <label class="online-label"
-                    >PHONE*
+                    ></textarea>
+                  <label class="online-label-textarea online-label">
+                    MESSAGE
                     </label>
                 </div>
+                
+                <button class="btn btn-submit" type="submit">SEND</button>
+              </form>
+              </div>      
+          </section>
+  
+          <section id="#contacts" class="section-contacts section"> 
+            <div class="container contacts">
+              <h2 class="contacts-title title" id="contacts">Contacts</h2>
+              <div class="contacts-working-wrap">
+                <address>
+                  <ul class="contacts-list list">
+                    <li class="contacts-item">
+                      <svg class="contacts-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-map-pin"></use></svg><a
+                        class="link"
+                        href="https://goo.gl/maps/yVDYsKzgi2dDGya88"
+                        target="_blank"
+                        rel="noopener noreferrer noffolow"
+                      >
+                        st. Vasilkivska, 7A
+                        Kyiv, 08132 </a>
+                    </li>
+                    <li class="contacts-item">
+                      <svg class="contacts-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>
+                      <a class="link" href="tel:+380441111111">
+                        +38 044 111 11 11</a
+                      >
+                    </li>
+                    <li class="contacts-item">
+                      <svg class="contacts-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                      </svg>
+                      <a class="link" href="mailto:barbershop@email.com">
+                        barbershop@email.com</a
+                      >
+                    </li>
+                  </ul>
+                </address>
+                <div class="working-wrap">
+                  <p class="contacts-working-hour pre-title">Working hours</p>
+                  <p class="contacts-text">Every day from 9:00 to 22:00</p>
+                
+                </div></div>
               </div>
-              <div class="form-field">
-                <textarea
-                    class="online-textarea online-input"
-                    name="user_comment"
-                    placeholder=" "
-                  ></textarea>
-                <label class="online-label-textarea online-label">
-                  MESSAGE
-                  </label>
-              </div>
-              
-              <button class="btn" type="submit">SEND</button>
-            </div>
-            </form>
-          <div class="contacts">
-            <h2 class="contacts-title title" id="contacts">Contacts</h2>
-            <address>
-              <ul class="contacts-list list">
-                <li class="contacts-item">
-                  <svg class="contacts-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-map-pin"></use></svg
-                  ><a
-                    class="link"
-                    href="https://goo.gl/maps/yVDYsKzgi2dDGya88"
-                    target="_blank"
-                    rel="noopener noreferrer noffolow"
-                  >
-                    st. Vasilkivska, 7A <br />
-                    Kyiv, 08132</a
-                  >
-                </li>
-                <li class="contacts-item">
-                  <svg class="contacts-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                  </svg>
-                  <a class="link" href="tel:+380441111111">
-                    +38 044 111 11 11</a
-                  >
-                </li>
-                <li class="contacts-item">
-                  <svg class="contacts-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-mail"></use>
-                  </svg>
-                  <a class="link" href="mailto:barbershop@email.com">
-                    barbershop@email.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <p class="contacts-working-hour pre-title">Working hours</p>
-            <p class="contacts-text">Every day from 9:00 to 22:00</p>
-          </div>
-        </div>
-      </section>
+           </section>
+      </div>
 
       <footer>
         <div class="footer container">
@@ -489,8 +757,9 @@
             </li>
           </ul>
         </div>
-      </footer>
-      <div class="backdrop is-hidden" data-modal>
+      </footer> 
+    </main>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close type="button">
           <svg class="modal-close-icon" width="15" height="15">
@@ -517,8 +786,9 @@
             </label>
           </div>
           <div class="modal-field">
-            <label class="input-text" for="user-email">Enter your mail</label>
-            <div class="input-wrap">
+            <label>
+              <span class="input-text" for="user-email">Enter your mail</span>
+            <span class="input-wrap">
               <input
                 class="modal-input"
                 id="user-email"
@@ -529,10 +799,13 @@
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-            </div>
+            </span>
+            </label>
           </div>
           <div class="modal-field">
-             <label class="input-text" for="user-tel">Enter your phone number*</label>
+             <label>
+              <span class="input-text" for="user-tel">Enter your phone number*</span>
+              <span class="input-wrap">
             <input
               class="modal-input"
               name="user-tel"
@@ -543,6 +816,11 @@
               required
               value="+380"
             />
+            <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone2"></use>
+              </svg>
+              </span>
+              </label>
           </div>
           <div class="modal-field">
             <label class="input-text" for="user-text">Enter a message</label>
@@ -579,12 +857,9 @@
           <button class = "btn submit-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
-    </main>
-    
-
+    </div> 
 <script src="./js/allmodal.js"></script>
+<script src="./js/menu.js"></script>
 <script src="./js/smooth-scroll.js"></script>
-   
   </body>
 </html>

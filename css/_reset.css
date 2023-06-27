@@ -4,12 +4,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-}
+h6,
 ul {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
+}
+.list {
+  list-style: none;
 }
 
 button {
@@ -21,9 +22,16 @@ address {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
+.picture {
+  margin: 0;
+}
 .link {
+  display: inline-block;
+  vertical-align: middle;
   text-decoration: none;
   color: inherit;
 }
